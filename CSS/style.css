@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1d2530;
+}
+
+.slider{
+    perspective: 1200px;
+    padding-top: 7%;
+}
+
+.spiner{
+    transform-style: preserve-3d;
+    height: 500px;
+    transform-origin: 50% 50% -800px;
+    transition: 1s;
+}
+
+.spiner img{
+    height: 500px;
+    width: 600px;
+    position: absolute;
+    left: 30%;
+    transform-origin: 50% 50% -800px;
+    outline:  1px solid transparent;
+}
+
+.spiner img:nth-child(1) {
+    transform: rotateY(0deg);
+}
+.spiner img:nth-child(2) {
+    transform: rotateY(-45deg);
+}
+.spiner img:nth-child(3) {
+    transform: rotateY(-90deg);
+}
+.spiner img:nth-child(4) {
+    transform: rotateY(-135deg);
+}
+.spiner img:nth-child(5) {
+    transform: rotateY(-180deg);
+}
+.spiner img:nth-child(6) {
+    transform: rotateY(-225deg);
+}
+.spiner img:nth-child(7) {
+    transform: rotateY(-270deg);
+}
+.spiner img:nth-child(8) {
+    transform: rotateY(-315deg);
+}
+
+
+.slider ~ span{
+    color: white;
+    margin: 5%;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20pt;
+    margin-top: -200px;
+    transition: .6s color;
+    position: relative;
+    border-bottom: none;
+    line-height: 0;
+}
+
+.slider ~ span:hover{
+    color: #888;
+    cursor: pointer;
+}
